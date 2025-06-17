@@ -1,0 +1,104 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: greenyellow;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.todo-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo {
+  background: white;
+  margin: 10px auto;
+  padding: 10px;
+  width: 400px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.complete-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+}
+
+.completed .todo-item {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.select select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.delete-btn i {
+  pointer-events: none; /* So clicking icon counts as clicking the button */
+}
+
+/* Hover cross styling */
+.todo-item {
+  position: relative;
+  cursor: default;
+}
+
+.hover-cross {
+  display: none;
+  margin-left: 10px;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.todo-item:hover .hover-cross {
+  display: inline;
+}
